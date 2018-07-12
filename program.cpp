@@ -3,5 +3,5 @@
 
 int main() {
 
-	cout<<"HELLO!!!<<endl;
+	cout<<"HELLO!!!"<<endl;
 }
