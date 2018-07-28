@@ -105,7 +105,7 @@ ant -f filr-qa/trunk/build.xml  clean compile restapis
 
 
 '''
-        junit '/root/filr-qa/trunk/reports/**/*.xml'
+        junit '/root/filr-qa/trunk/reports/*.xml'
       }
     }
   }
