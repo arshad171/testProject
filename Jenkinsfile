@@ -105,7 +105,7 @@ ant -f filr-qa/trunk/build.xml  clean compile restapis
 
 
 '''
-        junit '/root/filr-qa/trunk/reports/'
+        junit '/root/filr-qa/trunk/reports/TEST-novell.filr.va.ProtonREST.xml'
       }
     }
   }
