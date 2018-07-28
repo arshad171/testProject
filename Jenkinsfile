@@ -91,5 +91,22 @@ index=$((index+1))
 done'''
       }
     }
+    stage('Deploy') {
+      steps {
+        ansiblePlaybook '/root/BBS/home:Ajaveed:branches:Filr:3.0.0:Update/deploy.yml'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh '''cd /root/ 
+
+ant -f filr-qa/trunk/build.xml  clean compile restapis
+
+
+
+'''
+        junit '/root/filr-qa/trunk/reports/'
+      }
+    }
   }
 }
