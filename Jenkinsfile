@@ -91,7 +91,7 @@ index=$((index+1))
 done'''
       }
     }
-    stage('Deploy') {
+    stage('Deploy on Test Server') {
       steps {
         ansiblePlaybook '/root/BBS/home:Ajaveed:branches:Filr:3.0.0:Update/deploy.yml'
       }
